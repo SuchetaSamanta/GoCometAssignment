@@ -58,7 +58,7 @@ public class GoCometTest {
 
         //Searching for a Product that is not available in the Website
         category = "Laptops";
-        product = "Dell i7";
+        product = "Sony vaio i5";
         products.navigateToHomePage();
         status = products.searchForProduct(category, product);
         logStatus("TestCase 2", "Test Step: Verify searching for a Product: "+product, status ? "PASS" : "FAIL");
