@@ -1,3 +1,4 @@
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,16 +49,16 @@ public class Login {
         }
         return this.VerifyUserLoggedIn(Username);
     }
-        public Boolean VerifyUserLoggedIn(String Username) {
-            try {
-                // Find the username label (present on the top right of the page)
-                WebElement username_label = this.driver.findElement(By.id("nameofuser"));
-                return username_label.getText().equals(Username);
-            } catch (Exception e) {
-                return false;
-            }
-
+    public Boolean VerifyUserLoggedIn(String Username) {
+        try {
+            // Find the username label (present on the top right of the page)
+            WebElement username_label = this.driver.findElement(By.id("nameofuser"));
+            return username_label.getText().equals(Username);
+        } catch (Exception e) {
+            return false;
         }
+
+    }
 
     public Boolean performLogout() throws InterruptedException {
 
